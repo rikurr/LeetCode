@@ -5,13 +5,13 @@
  */
 
 // @lc code=start
-function twoSum(nums: number[], target: number): number[] {
-  for (let i = 0; i <= nums.length; i++) {
-    for (let j = i + 1; j <= nums.length; j++) {
-      if (nums[i] + nums[j] === target) {
-        return [i, j];
-      }
+function twoSum(nums: number[], target: number): any {
+  const comp = {};
+  for (let i = 0; i < nums.length; i++) {
+    if (comp[nums[i]] >= 0) {
+      return [comp[nums[i]], i]
     }
+    comp[target - nums[i]] = i;
   }
 }
 // @lc code=end
