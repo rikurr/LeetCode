@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-function longestCommonPrefix(strs: string[]): any {
+function longestCommonPrefix(strs: string[]): string {
   let common = "";
 
   if (strs.length === 0) {
