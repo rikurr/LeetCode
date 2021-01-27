@@ -6,7 +6,8 @@
 
 // @lc code=start
 function isValid(s: string): any {
-  console.log(s.trim()[s.length / 2]);
-  for (let i = 0; i < s.length; i++) {}
+  const stack = new Map();
+  stack.set("s", "s");
+  console.log(stack);
 }
 // @lc code=end
